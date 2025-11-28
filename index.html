@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Backbone Product App</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.13.6/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.5.0/backbone-min.js"></script>
+
+    <!-- Correct LocalStorage plugin (use v1.1.16 for compatibility with Backbone 1.x) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.1.16/backbone.localStorage-min.js"></script>
+</head>
+
+<body>
+
+<h1>Matt's Shop</h1>
+
+<!-- PRODUCT FORM -->
+<div class="card">
+    <h2>Add / Edit Product</h2>
+    <input id="p-name" placeholder="Product Name">
+    <input id="p-price" placeholder="Price">
+    <input id="p-image" type="file" accept="image/*">
+    <img id="p-preview" style="display:none;">
+    <button id="p-save">Save Product</button>
+</div>
+
+<!-- PRODUCT LIST -->
+<div class="products">
+    <h2>Products</h2>
+    <div id="product-list" class="grid"></div>
+</div>
+
+<!-- CLIENT FORM -->
+<div class="card">
+    <h2>Add Client</h2>
+    <input id="c-name" placeholder="Client Name">
+    <input id="c-card" placeholder="Card Number">
+    <input id="c-address" placeholder="Address">
+    <button id="c-save">Save Client</button>
+</div>
+
+<!-- CLIENT LIST -->
+<div>
+    <h2>Clients</h2>
+    <div id="client-list" class="grid"></div>
+
+</div>
+
+<!-- Main App Script -->
+<script src="app.js"></script>
+
+</body>
+</html>
